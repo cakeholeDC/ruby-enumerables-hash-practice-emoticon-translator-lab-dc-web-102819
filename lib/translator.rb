@@ -3,15 +3,16 @@ require "yaml"
 
 def load_library(path)
   emoticons = YAML.load_file(path)
-  #puts emoticons
+  puts emoticons
+  emoticons
   
-  emoji_lookup = {
-    "get_english": {},
-    "get_japanese": {},
-    "get_string": {}
-  }
+  #emoji_lookup = {
+  #  "get_english": {},
+  #  "get_japanese": {},
+  #  "get_string": {}
+  #}
   
-  emoticons.each do |key, value|
+  #emoticons.each do |key, value|
     
     #puts key
     #puts "value = #{value}"
@@ -20,9 +21,9 @@ def load_library(path)
     #puts emoticons[key][0] #=> returns english
     #puts emoticons[key][1] #=> returns japanese
     
-  end
-  puts emoji_lookup[:get_japanese]
-  emoji_lookup
+  #end
+  #puts emoji_lookup
+  #emoji_lookup
 end
 
 def get_japanese_emoticon(library,emoji)
