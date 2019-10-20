@@ -31,7 +31,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(library,emoji)
-  load_library(library)[]
+  #load_library(library)[]
   
   
   #emoticons.include?
