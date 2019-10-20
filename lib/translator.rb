@@ -22,12 +22,9 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(library,emoji)
-  load_library(library)[]
-  
-  
-  #emoticons.include?
+  load_library(library)[:get_emoticon][emoji]
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(library, japanese_emoji)
+  load_library(library)[:get_meaning][japanese_emoji]
 end
