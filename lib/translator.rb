@@ -27,5 +27,5 @@ def get_japanese_emoticon(library,emoji)
 end
 
 def get_english_meaning(library, japanese_emoji)
-  load_library(library)[:get_meaning][japanese_emoji]
+  output = load_library(library)[:get_meaning][japanese_emoji]
 end
