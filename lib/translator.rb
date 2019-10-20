@@ -28,4 +28,5 @@ end
 
 def get_english_meaning(library, japanese_emoji)
   output = load_library(library)[:get_meaning][japanese_emoji]
+  output ? output : "Sorry, that emoji was not found"
 end
