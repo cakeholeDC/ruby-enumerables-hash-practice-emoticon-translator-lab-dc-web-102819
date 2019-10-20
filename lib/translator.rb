@@ -20,12 +20,8 @@ def load_library(path)
     #puts emoticons[key][0] #=> returns english
     #puts emoticons[key][1] #=> returns japanese
     
-    emoji_lookup[:get_string] = key.to_s
-    emoji_lookup[key][:get_english] = emoticons[key][0]
-    emoji_lookup[key][:get_japanese] = emoticons[key][1]
-    
   end
-  puts emoji_lookup
+  puts emoji_lookup[:get_japanese]
   emoji_lookup
 end
 
