@@ -13,7 +13,8 @@ def load_library(path)
   
   emoticons.each do |key, value|
     
-    emoji_lookup[get_meaning]
+    emoji_lookup[:get_meaning][value[1]] = key.to_s
+    emoji_lookup[:]
     
     #puts key
     #puts "value = #{value}"
