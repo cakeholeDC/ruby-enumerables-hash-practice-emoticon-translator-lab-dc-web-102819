@@ -6,13 +6,14 @@ def load_library(path)
   puts emoticons
   emoticons
   
-  #emoji_lookup = {
-  #  "get_english": {},
-  #  "get_japanese": {},
-  #  "get_string": {}
-  #}
+  emoji_lookup = {
+    'get_meaning': {},
+    'get_emoticon': {}
+  }
   
-  #emoticons.each do |key, value|
+  emoticons.each do |key, value|
+    
+    emoji_lookup[get_meaning]
     
     #puts key
     #puts "value = #{value}"
