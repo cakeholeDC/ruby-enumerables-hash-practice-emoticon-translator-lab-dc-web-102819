@@ -14,18 +14,11 @@ def load_library(path)
   emoticons.each do |key, value|
     
     emoji_lookup[:get_meaning][value[1]] = key
-    emoji_lookup[:]
+    emoji_lookup[:get_emoticon][value[0]] = value[1]
     
-    #puts key
-    #puts "value = #{value}"
-    #puts value
-    #puts emoticons[key] #=> returns english / japanese
-    #puts emoticons[key][0] #=> returns english
-    #puts emoticons[key][1] #=> returns japanese
-    
-  #end
-  #puts emoji_lookup
-  #emoji_lookup
+  end
+  puts emoji_lookup
+  emoji_lookup
 end
 
 def get_japanese_emoticon(library,emoji)
